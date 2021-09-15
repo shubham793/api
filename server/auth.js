@@ -6,7 +6,7 @@ const router = express.Router();
 router.post(
   "/",
   [
-    body("name", "Enter a valid name").isLength({ min: 3 }),
+    body("number", "Enter a valid name").isLength({ min: 10 }),
     body("password", "password must be atleast 5 characters").isLength({
       min: 5,
     }),
